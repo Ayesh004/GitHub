@@ -1,0 +1,14 @@
+<?xml version ="1.0"?>
+<project name= "mkdir" default="copy">
+<target name='clean'>
+	<delete dir='ant'/>
+</target>
+
+<target name='create' depends='clean'>
+	<mkdir dir="E:\git\ant"/>
+</target>
+
+<target name='copy' depends='create'>
+	<copy file ='E:\copy.xml' todir ='E:\git\ant'/>
+</target>
+</project>
